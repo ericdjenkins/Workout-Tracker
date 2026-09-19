@@ -1,23 +1,14 @@
-# Big E Workout Tracker
+# Eric Jenkins Workout Log
 
-An installable, offline-first workout data app. It records weights, reps, completed sets, workout duration, and notes, with a four-day Planet Fitness routine preloaded as reusable templates.
+An installable four-day workout tracker designed for mobile use. It records weight, repetitions, RPE, hip-discomfort scores, exercise notes, workout dates, elapsed time, and completed sets. Data stays in the browser and can be exported or restored as JSON.
 
-Records stay on the phone in local storage. The Settings screen can export all records to a JSON backup and restore that backup on another device.
+## Workout split
 
-## Live app
+1. Chest, Shoulders & Triceps
+2. Back & Biceps
+3. Legs & Shoulders
+4. Full Body Workout
 
-https://ericdjenkins.github.io/Workout-Tracker/
+## Install
 
-## Android installation
-
-Open the live app in Chrome on Android, tap the browser menu, then **Add to Home screen** or **Install app**.
-
-## Local preview
-
-Run a local web server in this folder, for example:
-
-```bash
-npx serve .
-```
-
-Then open the displayed address in a browser. Workout history is stored in the browser's local storage and can be exported from Settings.
+Open the published GitHub Pages link on Android, then use the browser menu to choose **Add to Home screen** or tap the in-app **Install** button when offered.

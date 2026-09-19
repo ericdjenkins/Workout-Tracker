@@ -1,6 +1,6 @@
 {
-  "name":"Big E Gym Tracker",
-  "short_name":"Gym Tracker",
+  "name":"Eric Jenkins Workout Log",
+  "short_name":"Eric's Log",
   "description":"Record and store weights, reps, sets, notes, and workout history.",
   "start_url":"./",
   "display":"standalone",

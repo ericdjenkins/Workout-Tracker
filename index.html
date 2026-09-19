@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#101828">
-  <meta name="description" content="A simple four-day strength workout tracker.">
+  <meta name="description" content="Eric Jenkins' personal four-day workout log.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Big E Workout Tracker</title>
+  <title>Eric Jenkins Workout Log</title>
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">PERSONAL WORKOUT LOG</p>
-      <h1>Big E Gym Tracker</h1>
+      <h1>Eric Jenkins Workout Log</h1>
     </div>
     <button id="installButton" class="icon-button install-button" hidden>Install</button>
   </header>
@@ -23,10 +23,13 @@
   <main>
     <section id="homeView" class="view active" aria-labelledby="homeTitle">
       <div class="hero-card">
-        <p class="eyebrow">YOUR TRAINING DATA</p>
-        <h2 id="homeTitle">Log every set. See your progress.</h2>
-        <p>Record weights, reps, duration, and notes. Your four-day routine is preloaded as a reusable template.</p>
-        <button id="startNextButton" class="primary-button">Log a workout</button>
+        <img class="profile-photo" src="images/eric-lean-bucket-hat.png" alt="Eric Jenkins wearing a bucket hat at the beach">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR TRAINING DATA</p>
+          <h2 id="homeTitle">Log every set. See your progress.</h2>
+          <p>Record weights, reps, RPE, hip comfort, and notes for every workout.</p>
+          <button id="startNextButton" class="primary-button">Log a workout</button>
+        </div>
       </div>
       <div class="section-heading">
         <h2>Weekly plan</h2><span id="weekProgress">0 of 4 complete</span>
@@ -42,6 +45,7 @@
       <p id="sessionLabel" class="eyebrow"></p>
       <h2 id="sessionTitle"></h2>
       <p id="sessionNote" class="muted"></p>
+      <div class="session-date"><label for="workoutDate">Workout date</label><input id="workoutDate" type="date"></div>
       <div class="workout-note"><label for="workoutNotes">Workout notes</label><textarea id="workoutNotes" rows="3" placeholder="Energy, hip comfort, machine settings, or anything to remember…"></textarea></div>
       <div id="exerciseList"></div>
       <button id="finishWorkoutButton" class="primary-button finish-button">Finish workout</button>
